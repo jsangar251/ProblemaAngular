@@ -1,0 +1,7 @@
+<section>
+    <article *ngFor="let pokemon of pokemons">
+        <!--<a [href]="'login'">AAA</a>-->
+        <a [href]="'pokemon/' + pokemon.id">{{ pokemon.name }}</a>
+        <img [src]="pokemon.iconUrl" />
+    </article>
+</section>
